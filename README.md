@@ -1,2 +1,2 @@
-# ruby-shop
+# ruby-store
 follow ruby screencasts
