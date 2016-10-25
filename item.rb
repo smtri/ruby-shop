@@ -1,22 +1,14 @@
 class Item
 
-  def initialize
-    @price = 30
+  def initialize(options={})
+    @price = options[:price]
+    @weight = options[:weight]
   end
 # set default value to attribute price
-  
-  def price
-  	@price
-  end
-# getter method
 
-  def price=(price_value)
-  	@price = price_value
-  end
-  # setter method. syntax: name=(attr)
+ 	attr_reader :price, :weight
+	attr_writer :price
+# create getters and setters for several attributes
+
+
 end
-
-item1 = Item.new
-puts item1.price
-item1.price = 10
-puts item1.price
