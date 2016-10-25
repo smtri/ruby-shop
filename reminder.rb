@@ -1,6 +1,4 @@
-class Item
-
-  def initialize
+def initialize
     @price = 30
   end
 # set default value to attribute price
@@ -14,9 +12,3 @@ class Item
   	@price = price_value
   end
   # setter method. syntax: name=(attr)
-end
-
-item1 = Item.new
-puts item1.price
-item1.price = 10
-puts item1.price
